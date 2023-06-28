@@ -4,10 +4,10 @@ import { StringUtilsErrorMap } from '../TYPES'
 /**
  * Function to generate random ID using epoch time with random number.
  *
- * @param [length=10]
+ * @param [length=15] Length of the ID required
  * @returns Random ID string of specified length
  */
-export function randomId(length: RandomIdLength = 10): string {
+export function randomId(length: RandomIdLength = 15): string {
   const multiplier = RANDOM_ID_MULTIPLIER[length]
 
   if (!multiplier) {
