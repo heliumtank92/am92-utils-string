@@ -17,7 +17,7 @@
     "test": "echo 'Error: no test specified'",
     "preversion": "npm-run-all build test",
     "version": "npm-run-all generate:docs commit:docs",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags && npm run publish:pkg",
     "publish:pkg": "npm publish",
     "generate:docs": "npx compodoc -p tsconfig.json",
     "commit:docs": "git add docs && git commit -m 'Docs Updated'"
