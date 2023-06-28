@@ -1,6 +1,6 @@
 {
   "name": "@am92/utils-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "String Utilities",
   "sideEffects": false,
   "types": "dist/index.d.ts",
